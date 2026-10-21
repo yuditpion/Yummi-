@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Yummi | יאמי ווינרב · עיצוב ובניית אתרים</title>
+  <meta name="description" content="Yummi – עיצוב ובניית אתרים עם אופי. וטעם טוב. יאמי ווינרב מעצבת ובונה אתרים שנראים מעולה ועושים חשק ללחוץ.">
+  <meta name="theme-color" content="#05010f">
+  <meta property="og:title" content="Yummi | אתרים עם אופי. וטעם טוב.">
+  <meta property="og:description" content="עיצוב ובניית אתרים עם טעם טוב, חשיבה חדה וקצת חוצפה.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preload" href="assets/fonts/Plinko_Fs-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Plinko_Fs-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Allison-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/hero-bg.webp" as="image">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-loading">
+
+  <!-- Intro loader -->
+  <div class="loader" aria-hidden="true">
+    <img class="loader__logo" src="assets/img/logo.png" alt="">
+    <span class="loader__bar"><i></i></span>
+  </div>
+
+  <div class="progress" aria-hidden="true"><i></i></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <a class="skip" href="#main">דלגו לתוכן</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__pill">
+      <a class="nav__logo" href="#top" aria-label="Yummi – לראש העמוד">
+        <img src="assets/img/logo.png" alt="Yummi עיצוב ובניית אתרים" width="700" height="255">
+      </a>
+      <nav class="nav__links" aria-label="ניווט ראשי">
+        <a href="#process" data-spy="process">מה אני עושה</a>
+        <a href="#about" data-spy="about">מי זאת אני</a>
+        <a href="#work" data-spy="work">עבודות עם אופי</a>
+        <a href="#contact" data-spy="contact">נדבר?</a>
+        <svg class="nav__squiggle" viewBox="0 0 64 8" preserveAspectRatio="none" aria-hidden="true"><path d="M1 5.5C12 2.5 22 2 33 3.4S53 6.6 63 3"/></svg>
+      </nav>
+      <a class="btn btn--nav magnetic" href="#contact">
+        <span class="btn__label">יש לכם עסק?</span>
+        <span class="btn__circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+      </a>
+      <button class="nav__burger" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="mmenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mmenu" id="mmenu" aria-hidden="true">
+    <nav class="mmenu__links" aria-label="תפריט נייד">
+      <a href="#process"><small>01</small>מה אני עושה</a>
+      <a href="#about"><small>02</small>מי זאת אני</a>
+      <a href="#work"><small>03</small>עבודות עם אופי</a>
+      <a href="#contact"><small>04</small>נדבר?</a>
+    </nav>
+    <a class="btn btn--primary" href="#contact"><span class="btn__label">יש לכם עסק? בואו נדבר</span><span class="btn__arrow"><svg viewBox="0 0 24 24"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span></a>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__spot hero__spot--l" aria-hidden="true"></div>
+      <div class="hero__spot hero__spot--r" aria-hidden="true"></div>
+      <div class="hero__floor" aria-hidden="true"></div>
+
+      <div class="script hero__script" data-script="Websites" data-fs="73" aria-hidden="true"></div>
+
+      <div class="hero__art" data-parallax>
+        <picture><source media="(max-width: 1023.98px)" srcset="assets/img/hero-bg-m.webp"><img src="assets/img/hero-bg.webp" alt="Yummi – לפטופ עם צורות ניאון סגולות ואדומות" width="1720" height="1400"></picture>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="line"><span class="w">אתרים</span> <span class="w">עם</span> <span class="w">אופי<i class="dot dot--red">.</i></span><br class="br-m"> <span class="w lime">וטעם</span> <span class="w lime">טוב<i class="dot dot--red">.</i></span></span>
+      </h1>
+
+      <div class="hero__ctas">
+        <a class="btn btn--primary magnetic" href="#contact">
+          <span class="btn__label">יאללה, נעשה לכם אתר.</span>
+          <span class="btn__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span>
+        </a>
+        <a class="btn btn--ghost magnetic" href="#work"><span class="btn__label">רגע, קודם נראה עבודות</span></a>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="גללו למטה"><span></span></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <svg class="sep-wave" viewBox="0 0 800 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40C120 66 230 70 340 48S560 10 800 46"/></svg>
+      <div class="about__art" data-reveal="art">
+        <img class="about__img about__img--d" src="assets/img/about.webp" alt="איור של יאמי ליד המחשב, עם צורות ניאון סגולות" width="1156" height="844" loading="lazy">
+        <img class="about__img about__img--m" src="assets/img/about-m.webp" alt="איור של יאמי עם כוס קפה" width="1000" height="698" loading="lazy">
+      </div>
+
+      <div class="about__text">
+        <div class="script about__script" data-script="About me" data-fs="55" data-reveal aria-hidden="true"></div>
+        <h2 class="about__title" data-reveal>היי<i class="bang">!</i> אני יאמי<i class="bang">!</i></h2>
+        <p class="about__sub lime" data-reveal>שם מתוק. אתרים עם אופי.</p>
+        <p class="about__body" data-reveal>
+          אני מעצבת ובונה אתרים עם טעם טוב,<br>
+          חשיבה חדה וקצת חוצפה.<br>
+          כאלה שנראים מעולה ועושים חשק ללחוץ.
+        </p>
+        <a class="btn btn--primary about__btn magnetic" href="#contact" data-reveal>
+          <span class="btn__label">יש לנו קליק? בואו נדבר</span>
+          <span class="btn__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process" id="process">
+      <svg class="sep-wave" viewBox="0 0 800 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30C140 64 260 62 380 40S600 12 800 52"/></svg>
+      <div class="process__glow" aria-hidden="true"></div>
+      <div class="script process__script" data-script="The process" data-fs="67" data-reveal aria-hidden="true"></div>
+      <h2 class="process__title" data-reveal>
+        <span class="line">איך זה קורה?</span>
+        <span class="line">בלי קסמים.<br class="br-m"> <span class="lime">כמעט</span><i class="dot dot--red">.</i></span>
+      </h2>
+
+      <ol class="steps" data-reveal="steps">
+        <li class="step">
+          <span class="step__num" aria-hidden="true">01</span>
+          <span class="step__dot" aria-hidden="true"></span>
+          <h3 class="step__title">קודם הראש<i class="dot dot--red">.</i></h3>
+          <p class="step__text">נכנסים לראש של העסק.<br>ניחושים? פחות הקטע שלי.</p>
+        </li>
+        <li class="step__line" aria-hidden="true"><i></i></li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">02</span>
+          <span class="step__dot" aria-hidden="true"></span>
+          <h3 class="step__title">עכשיו העיניים<i class="dot dot--red">.</i></h3>
+          <p class="step__text">מלבישים את האסטרטגיה בוואו.<br>כן, גם לפיקסלים יש אופי.</p>
+        </li>
+        <li class="step__line" aria-hidden="true"><i></i></li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">03</span>
+          <span class="step__dot" aria-hidden="true"></span>
+          <h3 class="step__title">יאללה, לאוויר<i class="dot dot--red">.</i></h3>
+          <p class="step__text">בונים, בודקים ומשגרים.<br>יפה זה נחמד. שיעבוד זה יאמי</p>
+        </li>
+      </ol>
+
+      <a class="btn btn--primary process__btn magnetic" href="#contact" data-reveal>
+        <span class="btn__label">נו, מתחילים?</span>
+        <span class="btn__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span>
+      </a>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="work" id="work">
+      <svg class="work__waves" viewBox="0 0 736 2135" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="4" result="b1"/>
+            <feGaussianBlur stdDeviation="12" result="b2"/>
+            <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <linearGradient id="waveg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#7b2bff"/>
+            <stop offset=".5" stop-color="#5a1ff8"/>
+            <stop offset="1" stop-color="#8f3bff"/>
+          </linearGradient>
+        </defs>
+        <path class="wave wave--l" d="M150 170C80 170 30 210 36 290 44 400 70 470 46 560 22 650 -6 700 10 790 26 880 60 960 40 1050 20 1140 -10 1200 8 1290 26 1380 58 1450 38 1540 18 1630 -8 1700 6 1790 20 1880 50 1960 30 2135"/>
+        <path class="wave wave--r" d="M640 400C690 430 720 520 700 610 680 700 610 760 630 860 650 960 720 1000 710 1100 700 1200 620 1240 640 1340 660 1440 730 1480 716 1580 702 1680 630 1720 650 1820 670 1920 736 1960 736 2135"/>
+      </svg>
+
+      <div class="work__head">
+        <div class="script work__script" data-script="Selected work" data-reveal aria-hidden="true"></div>
+        <h2 class="work__title" data-reveal>פחות דיבורים<i class="dot dot--red">.</i> יותר קליקים<i class="dot dot--lime">.</i></h2>
+      </div>
+
+      <div class="projects">
+        <!-- 01 -->
+        <article class="project" data-reveal="project">
+          <div class="project__info">
+            <div class="project__num"><span class="project__rule"></span><b>01</b></div>
+            <h3 class="project__name">רבבה</h3>
+            <p class="project__tag">אתר פוטונני<i class="dot dot--red">.</i> בלי פילטר.</p>
+            <a class="btn btn--primary btn--sm magnetic" href="https://revava.co.il" target="_blank" rel="noopener">
+              <span class="btn__label">לראות את האתר המלא</span>
+              <span class="btn__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span>
+            </a>
+          </div>
+          <div class="project__media">
+            <a class="browser" href="https://revava.co.il" target="_blank" rel="noopener" aria-label="רבבה – פתיחת האתר">
+              <span class="browser__bar"><i></i><i></i><i></i><b></b><b></b><b></b></span>
+              <span class="browser__screen"><img src="assets/img/work/revava.webp" alt="צילום מסך – אתר רבבה" width="1620" height="960" loading="lazy"></span>
+            </a>
+            <a class="project__url" href="https://revava.co.il" target="_blank" rel="noopener"><span class="link-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4l-1.1 1.1M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.1-1.1"/></svg></span>revava.co.il</a>
+          </div>
+        </article>
+
+        <!-- 02 -->
+        <article class="project" data-reveal="project">
+          <div class="project__info">
+            <div class="project__num"><span class="project__rule"></span><b>02</b></div>
+            <h3 class="project__name">מרים ישראלי</h3>
+            <p class="project__tag">אתר עם נשמה<i class="dot dot--red">.</i> ורואים עליו.</p>
+            <a class="btn btn--primary btn--sm magnetic" href="https://miriam-israeli.co.il" target="_blank" rel="noopener">
+              <span class="btn__label">לראות את האתר המלא</span>
+              <span class="btn__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span>
+            </a>
+          </div>
+          <div class="project__media">
+            <a class="browser" href="https://miriam-israeli.co.il" target="_blank" rel="noopener" aria-label="מרים ישראלי – פתיחת האתר">
+              <span class="browser__bar"><i></i><i></i><i></i><b></b><b></b><b></b></span>
+              <span class="browser__screen"><img src="assets/img/work/miriam-israeli.webp" alt="צילום מסך – אתר מרים ישראלי" width="1644" height="952" loading="lazy"></span>
+            </a>
+            <a class="project__url" href="https://miriam-israeli.co.il" target="_blank" rel="noopener"><span class="link-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4l-1.1 1.1M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.1-1.1"/></svg></span>miriam-israeli.co.il</a>
+          </div>
+        </article>
+
+        <!-- 03 -->
+        <article class="project" data-reveal="project">
+          <div class="project__info">
+            <div class="project__num"><span class="project__rule"></span><b>03</b></div>
+            <h3 class="project__name">עטרת גורן</h3>
+            <p class="project__tag">רך בעיניים<i class="dot dot--red">.</i> חד בחוויה.</p>
+            <a class="btn btn--primary btn--sm magnetic" href="https://ateretgoren.co.il" target="_blank" rel="noopener">
+              <span class="btn__label">לראות את האתר המלא</span>
+              <span class="btn__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span>
+            </a>
+          </div>
+          <div class="project__media">
+            <a class="browser" href="https://ateretgoren.co.il" target="_blank" rel="noopener" aria-label="עטרת גורן – פתיחת האתר">
+              <span class="browser__bar"><i></i><i></i><i></i><b></b><b></b><b></b></span>
+              <span class="browser__screen"><img src="assets/img/work/ateret-goren.webp" alt="צילום מסך – אתר עטרת גורן" width="1648" height="972" loading="lazy"></span>
+            </a>
+            <a class="project__url" href="https://ateretgoren.co.il" target="_blank" rel="noopener"><span class="link-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4l-1.1 1.1M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.1-1.1"/></svg></span>ateretgoren.co.il</a>
+          </div>
+        </article>
+
+        <!-- 04 -->
+        <article class="project" data-reveal="project">
+          <div class="project__info">
+            <div class="project__num"><span class="project__rule"></span><b>04</b></div>
+            <h3 class="project__name">סטודיו מנטה</h3>
+            <p class="project__tag">מרענן<i class="dot dot--red">.</i> ובלי סוכר.</p>
+            <a class="btn btn--primary btn--sm magnetic" href="https://menta-studio.co.il" target="_blank" rel="noopener">
+              <span class="btn__label">לראות את האתר המלא</span>
+              <span class="btn__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span>
+            </a>
+          </div>
+          <div class="project__media">
+            <a class="browser" href="https://menta-studio.co.il" target="_blank" rel="noopener" aria-label="סטודיו מנטה – פתיחת האתר">
+              <span class="browser__bar"><i></i><i></i><i></i><b></b><b></b><b></b></span>
+              <span class="browser__screen"><img src="assets/img/work/menta-studio.webp" alt="צילום מסך – אתר סטודיו מנטה" width="1648" height="976" loading="lazy"></span>
+            </a>
+            <a class="project__url" href="https://menta-studio.co.il" target="_blank" rel="noopener"><span class="link-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4l-1.1 1.1M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.1-1.1"/></svg></span>menta-studio.co.il</a>
+          </div>
+        </article>
+
+        <!-- 05 -->
+        <article class="project" data-reveal="project">
+          <div class="project__info">
+            <div class="project__num"><span class="project__rule"></span><b>05</b></div>
+            <h3 class="project__name">נקודה טובה</h3>
+            <p class="project__tag">הבמה שלהם<i class="dot dot--red">.</i> הוואו עליי.</p>
+            <a class="btn btn--primary btn--sm magnetic" href="https://nekuda-tova.co.il" target="_blank" rel="noopener">
+              <span class="btn__label">לראות את האתר המלא</span>
+              <span class="btn__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span>
+            </a>
+          </div>
+          <div class="project__media">
+            <a class="browser" href="https://nekuda-tova.co.il" target="_blank" rel="noopener" aria-label="נקודה טובה – פתיחת האתר">
+              <span class="browser__bar"><i></i><i></i><i></i><b></b><b></b><b></b></span>
+              <span class="browser__screen"><img src="assets/img/work/nekuda-tova.webp" alt="צילום מסך – אתר נקודה טובה" width="1644" height="968" loading="lazy"></span>
+            </a>
+            <a class="project__url" href="https://nekuda-tova.co.il" target="_blank" rel="noopener"><span class="link-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4l-1.1 1.1M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.1-1.1"/></svg></span>nekuda-tova.co.il</a>
+          </div>
+        </article>
+
+        <!-- 06 -->
+        <article class="project" data-reveal="project">
+          <div class="project__info">
+            <div class="project__num"><span class="project__rule"></span><b>06</b></div>
+            <h3 class="project__name">אפרת פרידמן</h3>
+            <p class="project__tag">מספרים ברצינות<i class="dot dot--red">.</i><br>עיצוב בלי יובש<i class="dot dot--red">.</i></p>
+            <a class="btn btn--primary btn--sm magnetic" href="https://efrattfriedman.co.il" target="_blank" rel="noopener">
+              <span class="btn__label">לראות את האתר המלא</span>
+              <span class="btn__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span>
+            </a>
+          </div>
+          <div class="project__media">
+            <a class="browser" href="https://efrattfriedman.co.il" target="_blank" rel="noopener" aria-label="אפרת פרידמן – פתיחת האתר">
+              <span class="browser__bar"><i></i><i></i><i></i><b></b><b></b><b></b></span>
+              <span class="browser__screen"><img src="assets/img/work/efrat-friedman.webp" alt="צילום מסך – אתר אפרת פרידמן" width="1644" height="968" loading="lazy"></span>
+            </a>
+            <a class="project__url" href="https://efrattfriedman.co.il" target="_blank" rel="noopener"><span class="link-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4l-1.1 1.1M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.1-1.1"/></svg></span>efrattfriedman.co.il</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="contact__glow contact__glow--a" aria-hidden="true"></div>
+      <div class="contact__glow contact__glow--b" aria-hidden="true"></div>
+      <div class="contact__tube" data-reveal="tube" aria-hidden="true"><picture><source media="(max-width: 1023.98px)" srcset="assets/img/tube-m.webp"><img src="assets/img/tube.webp" alt="" width="1544" height="1400" loading="lazy"></picture></div>
+
+      <div class="contact__text">
+        <h2 class="contact__title" data-reveal>
+          <span class="line">אז מה</span>
+          <span class="line">מתבשל</span>
+          <span class="line"><span class="u">אצלכם<svg class="u__line" viewBox="0 0 140 12" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8.5C30 3.5 70 2.5 137 6.5"/></svg></span>?</span>
+        </h2>
+        <p class="contact__sub" data-reveal>ספרו לי קצת. נעשה מזה משהו טוב.</p>
+      </div>
+
+      <form class="form" id="contact-form" novalidate data-reveal="form">
+        <label class="field field--name">
+          <span class="field__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c.8-3.6 3.8-6 7.5-6s6.7 2.4 7.5 6"/></svg></span>
+          <input type="text" name="name" placeholder="שם" autocomplete="name" required>
+        </label>
+        <label class="field field--phone">
+          <span class="field__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.3 3.6 6 3.2c-1 0-2.6 1.4-2.6 2.8 0 7.7 6.9 14.6 14.6 14.6 1.4 0 2.8-1.6 2.8-2.6l-.4-2.3-3.9-1.3-1.8 1.8c-2.6-1.2-4.9-3.5-6.1-6.1l1.8-1.8-1.3-3.9Z"/></svg></span>
+          <input type="tel" name="phone" placeholder="טלפון" autocomplete="tel" inputmode="tel" required>
+        </label>
+        <label class="field field--mail">
+          <span class="field__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.8 6.5 8.2 6.3 8.2-6.3"/></svg></span>
+          <input type="email" name="email" placeholder="מייל" autocomplete="email">
+        </label>
+        <label class="field field--msg">
+          <span class="field__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4V6a2 2 0 0 1 1-2Z"/><path d="M8.5 9h7M8.5 12.5h4"/></svg></span>
+          <textarea name="message" placeholder="הודעה" rows="4"></textarea>
+          <span class="field__grip" aria-hidden="true"></span>
+        </label>
+        <button class="btn btn--big magnetic" type="submit">
+          <span class="btn__label">יאללה, שלחו</span>
+          <span class="btn__sep" aria-hidden="true"></span>
+          <span class="btn__circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 17 7 7m0 9V7h9"/></svg></span>
+        </button>
+        <p class="form__msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- ============ LET'S TALK ============ -->
+    <section class="talk" id="talk">
+      <div class="talk__script" data-reveal="talk" aria-hidden="true"><picture><source media="(max-width: 1023.98px)" srcset="assets/img/lets-talk-m.webp"><img src="assets/img/lets-talk.webp" alt="" width="1490" height="740" loading="lazy"></picture></div>
+      <div class="talk__text">
+        <h2 class="talk__title" data-reveal>
+          <span class="line">נו, עושים</span>
+          <span class="line">משהו <span class="u">טעים<svg class="u__line" viewBox="0 0 140 12" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8.5C30 3.5 70 2.5 137 6.5"/></svg></span>?</span>
+        </h2>
+        <p class="talk__sub" data-reveal>העסק שלכם. הראש שלי. אתר עם אופי.</p>
+        <a class="btn btn--big magnetic" href="#contact" data-reveal data-focus-form>
+          <span class="btn__label">יאללה, נדבר</span>
+          <span class="btn__sep" aria-hidden="true"></span>
+          <span class="btn__circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 17 7 7m0 9V7h9"/></svg></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a class="footer__logo" href="#top" aria-label="Yummi – לראש העמוד"><img src="assets/img/logo.png" alt="Yummi עיצוב ובניית אתרים" width="700" height="255" loading="lazy"></a>
+      <span class="footer__vsep" aria-hidden="true"></span>
+      <div class="footer__col footer__nav">
+        <h3>קפיצה קטנה</h3>
+        <a href="#process">מה אני עושה</a>
+        <a href="#about">מי זאת יאמי</a>
+        <a href="#work">עבודות עם אופי</a>
+      </div>
+      <span class="footer__vsep" aria-hidden="true"></span>
+      <div class="footer__col footer__contact">
+        <h3>ממשיכים מכאן</h3>
+        <div class="footer__icons">
+          <a href="mailto:hello@yummi.co.il" class="ficon"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="6.5" width="26" height="19" rx="3"/><path d="m4 8 12 9 12-9"/></svg><span>מייל</span></a>
+          <a href="https://wa.me/972500000000" target="_blank" rel="noopener" class="ficon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.5A12.5 12.5 0 0 0 5.2 22.3L3.6 28.4l6.3-1.6A12.5 12.5 0 1 0 16 3.5Z"/><path d="M11.6 9.8c.4-.4 1.2-.4 1.5.1l1.3 2.5c.2.4.1.9-.2 1.2l-.8.8c.9 1.8 2.4 3.3 4.2 4.2l.8-.8c.3-.3.8-.4 1.2-.2l2.5 1.3c.5.3.5 1.1.1 1.5l-.9 1c-.8.8-2 1-3 .6-3.6-1.4-6.4-4.2-7.8-7.8-.4-1-.2-2.2.6-3Z" class="fill"/></svg><span>וואטסאפ</span></a>
+          <a href="tel:+972500000000" class="ficon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10.8 4.5 7.6 4C6.2 4 4 6 4 8c0 10.8 9.2 20 20 20 2 0 4-2.2 4-3.6l-.5-3.2-5.4-1.8-2.5 2.5c-3.6-1.7-6.8-4.9-8.5-8.5l2.5-2.5-1.8-5.4Z"/></svg><span>טלפון</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__made"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 13h18v5a8 8 0 0 1-8 8h-2a8 8 0 0 1-8-8v-5Z"/><path d="M23 15h1.5a3.5 3.5 0 0 1 0 7H22M3 28.5h22"/><path class="steam" d="M10 10c-1-1.5 1-2.5 0-4.5M14 10c-1-1.5 1-2.5 0-4.5M18 10c-1-1.5 1-2.5 0-4.5"/></svg>נבנה עם אופי. ועם קפה.</p>
+      <span class="footer__bsep" aria-hidden="true"></span>
+      <a href="#" class="footer__legal">מדיניות פרטיות</a>
+      <span class="footer__bsep" aria-hidden="true"></span>
+      <a href="#" class="footer__legal">תנאי שימוש</a>
+      <span class="footer__bsep" aria-hidden="true"></span>
+      <a href="#" class="footer__legal">נגישות</a>
+      <span class="footer__copy" dir="ltr">© 2026 Yummi</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/lenis.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
